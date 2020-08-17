@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_10_e_book_mobile_app/screens/screen_2_3_4_carousel_screens.dart';
 
 class Screen1 extends StatefulWidget {
   @override
@@ -35,13 +36,28 @@ class _Screen1State extends State<Screen1> {
                 padding: const EdgeInsets.only(left: 14.0, right: 14),
                 child: Column(
                   children: [
-                    Container(
-                      height: 50,
-                      width: MediaQuery.of(context).size.width - 28,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(25),
-                      ),child:Center(child:Text("SHORT TOUR",style:TextStyle(letterSpacing:.8 ,color: Colors.black,fontWeight: FontWeight.w500,fontSize:16)))
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            new MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    CarousalScreen()));
+                      },
+                      child: Container(
+                          height: 50,
+                          width: MediaQuery.of(context).size.width - 28,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          child: Center(
+                              child: Text("SHORT TOUR",
+                                  style: TextStyle(
+                                      letterSpacing: .8,
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16)))),
                     ),
                     SizedBox(height: 14),
                     Row(
@@ -51,19 +67,35 @@ class _Screen1State extends State<Screen1> {
                             height: 50,
                             width: MediaQuery.of(context).size.width / 2 - 28,
                             decoration: BoxDecoration(
-                             color: Colors.transparent,border: Border.all(width: 1.5,color:Colors.white),
+                              color: Colors.transparent,
+                              border:
+                                  Border.all(width: 1.5, color: Colors.white),
                               borderRadius: BorderRadius.circular(25),
-                            ),child:Center(child:Text("LOGIN",style:TextStyle(letterSpacing:-.3 ,color: Colors.white,fontWeight: FontWeight.w400,fontSize:16)))
-                           ),
+                            ),
+                            child: Center(
+                                child: Text("LOGIN",
+                                    style: TextStyle(
+                                        letterSpacing: -.3,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 16)))),
                         SizedBox(width: 15),
                         Container(
                             height: 50,
                             width: MediaQuery.of(context).size.width / 2 - 28,
                             decoration: BoxDecoration(
-                              color: Colors.transparent,border: Border.all(width: 1.5,color:Colors.white),
+                              color: Colors.transparent,
+                              border:
+                                  Border.all(width: 1.5, color: Colors.white),
                               borderRadius: BorderRadius.circular(25),
-                            ),child:Center(child:Text("REGISTER",style:TextStyle(letterSpacing:-0.3 ,color: Colors.white,fontWeight: FontWeight.w400,fontSize:16)))
-                           )
+                            ),
+                            child: Center(
+                                child: Text("REGISTER",
+                                    style: TextStyle(
+                                        letterSpacing: -0.3,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 16))))
                       ],
                     ),
                     // Container(height: 30, width: 30, color: Colors.white)
