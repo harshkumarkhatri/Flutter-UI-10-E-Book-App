@@ -10,16 +10,12 @@ class _Screen6State extends State<Screen6> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: SingleChildScrollView(
-                  child: Stack(
-      children: [
+      child: Stack(
+        children: [
           Container(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height / 2.95,
             decoration: BoxDecoration(
-              // image: DecorationImage(
-              //   image: NetworkImage(
-              //       "https://res.cloudinary.com/harshkumarkhatri/image/upload/v1597665430/profile_pictures/Screen-01_1_yqnjtn.png"),
-              // ),
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomCenter,
@@ -36,52 +32,57 @@ class _Screen6State extends State<Screen6> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                // Container(height: 30,width: 30,color:Colors.red,)
                 SizedBox(
-                  height: MediaQuery.of(context).size.height /2.7,
+                  height: MediaQuery.of(context).size.height / 2.6,
                 ),
                 Text(
                   "Signup to Continue",
                   style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 21,
-                    fontWeight: FontWeight.w500,height:1.5
-                  ),
-                ),SizedBox(height: 10,),
+                      color: Colors.black,
+                      fontSize: 21,
+                      fontWeight: FontWeight.w500,
+                      height: 1.5),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
 
                 TextField(
+                  style: TextStyle(height: 0),
                   obscureText: true,
                   decoration: InputDecoration(
                     labelText: "NAME",
-                    // hintText: "Confi",
                   ),
                 ),
-                SizedBox(height: 15),TextField(
+                SizedBox(height: 15),
+                TextField(
+                  style: TextStyle(height: 0),
                   obscureText: true,
                   decoration: InputDecoration(
                     labelText: "EMAIL ID",
-                    // hintText: "Email",
                   ),
                 ),
-                SizedBox(height: 15),TextField(
+                SizedBox(height: 15),
+                TextField(
+                  style: TextStyle(height: 0),
                   obscureText: true,
                   decoration: InputDecoration(
                     labelText: "PASSWORD",
-                    // hintText: "PASSWORD",
                   ),
                 ),
-                SizedBox(height: 15),TextField(
+                SizedBox(height: 15),
+                TextField(
+                  style: TextStyle(height: 0),
                   obscureText: true,
                   decoration: InputDecoration(
                     labelText: "CONFIRM PASSWORD",
-                    // hintText: "CONFIRM PASSWORD",
                   ),
                 ),
-                SizedBox(height: 18),
+                SizedBox(height: 20),
 
                 // Register button
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 10),
+                  padding: const EdgeInsets.only(bottom: 18),
                   child: Container(
                     height: 45,
                     width: MediaQuery.of(context).size.width,
@@ -124,8 +125,8 @@ class _Screen6State extends State<Screen6> {
               ],
             ),
           ),
-      ],
-    ),
-        ));
+        ],
+      ),
+    ));
   }
 }

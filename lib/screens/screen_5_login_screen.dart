@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_10_e_book_mobile_app/screens/bottom_navgation_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Screen5 extends StatefulWidget {
@@ -17,10 +18,6 @@ class _Screen5State extends State<Screen5> {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height / 2.95,
             decoration: BoxDecoration(
-              // image: DecorationImage(
-              //   image: NetworkImage(
-              //       "https://res.cloudinary.com/harshkumarkhatri/image/upload/v1597665430/profile_pictures/Screen-01_1_yqnjtn.png"),
-              // ),
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -37,7 +34,6 @@ class _Screen5State extends State<Screen5> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                // Container(height: 30,width: 30,color:Colors.red,)
                 SizedBox(
                   height: MediaQuery.of(context).size.height / 2.7,
                 ),
@@ -57,7 +53,6 @@ class _Screen5State extends State<Screen5> {
                   obscureText: true,
                   decoration: InputDecoration(
                     labelText: "EMAIL ID",
-                    // hintText: "Email",
                   ),
                 ),
                 SizedBox(height: 15),
@@ -66,31 +61,43 @@ class _Screen5State extends State<Screen5> {
                   obscureText: true,
                   decoration: InputDecoration(
                     labelText: "PASSWORD",
-                    // hintText: "PASSWORD",
                   ),
                 ),
                 SizedBox(height: 18),
 
                 // Register button
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 10),
-                  child: Container(
-                    height: 45,
-                    width: MediaQuery.of(context).size.width,
-                    child: Center(
-                      child: Text(
-                        "LOGIN",
-                        style: TextStyle(
-                            letterSpacing: 0.9,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                            fontSize: 17),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      new MaterialPageRoute(
+                        builder: (BuildContext context) => BottomNav(),
                       ),
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(22),
-                      gradient: LinearGradient(
-                        colors: [Colors.green.shade400, Colors.green.shade100],
+                    );
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: Container(
+                      height: 45,
+                      width: MediaQuery.of(context).size.width,
+                      child: Center(
+                        child: Text(
+                          "LOGIN",
+                          style: TextStyle(
+                              letterSpacing: 0.9,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 17),
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(22),
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.green.shade400,
+                            Colors.green.shade100
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -106,7 +113,6 @@ class _Screen5State extends State<Screen5> {
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                             )),
-                        // can add more TextSpans here...
                       ],
                     ),
                   ),
