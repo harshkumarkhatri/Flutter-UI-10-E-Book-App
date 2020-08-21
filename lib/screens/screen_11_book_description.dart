@@ -353,8 +353,6 @@ class _Screen11State extends State<Screen11> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          // _showBottom;
-                          // _settingModalBottomSheet(context);
                           showModalBottomSheet(
                             context: context,
                             builder: (BuildContext context) {
@@ -530,9 +528,6 @@ class _Screen11State extends State<Screen11> {
                                           ),
                                         ),
                                       ),
-                                      // RaisedButton(
-                                      //   onPressed: () => Navigator.pop(context),
-                                      // )
                                     ],
                                   ),
                                 ),
@@ -552,7 +547,6 @@ class _Screen11State extends State<Screen11> {
                   padding: const EdgeInsets.only(
                       left: 15.0, right: 15, top: 10, bottom: 15),
                   child: Row(
-                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
                         height: 45,
@@ -590,7 +584,6 @@ class _Screen11State extends State<Screen11> {
                   padding: const EdgeInsets.only(
                       left: 15.0, right: 15, top: 10, bottom: 15),
                   child: Row(
-                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
                         height: 45,
@@ -627,14 +620,6 @@ class _Screen11State extends State<Screen11> {
               ],
             ),
           ),
-          // Positioned(
-          //   bottom: 0,
-          //   child: Container(
-          //     height: 225,
-          //     width: MediaQuery.of(context).size.width,
-          //     color: Colors.white,
-          //   ),
-          // ),
         ],
       ),
     );

@@ -60,7 +60,6 @@ class _Screen15State extends State<Screen15> {
             actions: [
               Center(
                 child: PopupMenuButton<String>(
-                  // onSelected: handleClick,
                   itemBuilder: (BuildContext context) {
                     return {'Logout', 'Settings'}.map((String choice) {
                       return PopupMenuItem<String>(

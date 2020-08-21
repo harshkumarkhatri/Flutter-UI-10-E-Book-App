@@ -82,39 +82,6 @@ class _CarousalScreenState extends State<CarousalScreen> {
                 ),
               ),
               SizedBox(height: 0),
-
-              // Displaying the dots according to ListItem
-              // Padding(
-              //   padding: const EdgeInsets.only(left: 14.0),
-              //   child: Row(
-              //     children: imgList.map((url) {
-              //       int index = imgList.indexOf(url);
-              //       return _current == index
-              //           ? Padding(
-              //               padding: EdgeInsets.only(left: 22),
-              //               child: Container(
-              //                 height: 11,
-              //                 width: 11,
-              //                 margin: EdgeInsets.symmetric(
-              //                     vertical: 10, horizontal: 2),
-              //                 decoration: BoxDecoration(
-              //                     shape: BoxShape.circle,
-              //                     color: Colors.purple[800]),
-              //               ))
-              //           : Padding(
-              //               padding: EdgeInsets.only(left: 22),
-              //               child: Container(
-              //                 height: 8,
-              //                 width: 8,
-              //                 margin: EdgeInsets.symmetric(
-              //                     vertical: 10, horizontal: 2),
-              //                 decoration: BoxDecoration(
-              //                     shape: BoxShape.circle, color: Colors.grey),
-              //               ),
-              //             );
-              //     }).toList(),
-              //   ),
-              // ),
               SizedBox(height: 40),
               Container(
                 alignment: Alignment.bottomCenter,

@@ -221,7 +221,6 @@ class _Screen7State extends State<Screen7> {
                       ),
                     ),
                   ),
-                  // GridView.builder(gridDelegate: null, itemBuilder: null)
                 ],
               ),
             ),
@@ -338,7 +337,6 @@ class _Screen7State extends State<Screen7> {
               Container(
                 height: 135,
                 decoration: BoxDecoration(
-                  // color: Colors.red,
                   image: DecorationImage(
                       fit: BoxFit.cover,
                       image: NetworkImage(
