@@ -11,9 +11,6 @@ Some snaps from the UI:-
 * Full video:- <br>
 * Snaps:- 
 <p>
-<img src="" height=350>
-<img src="" height=350>
-
 <img src="assets/Screen-01.jpg" height=350>
 <img src="assets/Screen-02.jpg" height=350>
 <img src="assets/Screen-03.jpg" height=350>
