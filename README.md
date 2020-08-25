@@ -28,6 +28,9 @@ Some snaps from the UI:-
 <img src="assets/Screen-15.jpg" height=350>
 </p>
 
+___
+## Made by:-
+<a href="http://bit.ly/iamharsh"><img src="https://avatars1.githubusercontent.com/u/42743629?s=460&u=1f68b5930fca70c68c90e2392798643919a7eeed&v=4" width="100px;" alt=""/><br /><sub><b>Harsh Kumar Khatri</b></sub></a><br /><a href="" title="Code">💻</a>
 ## Getting Started
 
 This project is a starting point for a Flutter application.
