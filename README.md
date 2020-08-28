@@ -1,6 +1,18 @@
 # flutter_ui_10_e_book_mobile_app
 
-This is another ui which i made in flutter.
+This is another ui which i made in flutter.<br>
+This UI is a part of a series of UI's i am building. Check other UI's clicking the link below.
+* [Flutter UI 1 Login UI](https://github.com/harshkumarkhatri/Flutter-UI-1-Login-UI)
+* [Flutter UI 2 Product Showcase UI](https://github.com/harshkumarkhatri/Product-Showcase-UI-Flutter)
+* [Flutter UI 3 Find Your Inspiration](https://github.com/harshkumarkhatri/Flutter-UI-3-Find-your-inspiration)
+* [Flutter UI 4 Looking for Places](https://github.com/harshkumarkhatri/Flutter-UI-4-Looking-for-Places)
+* [Flutter UI 5 Food Delivery UI](https://github.com/harshkumarkhatri/Flutter-UI-5-Food-delivery-app)
+* [Flutter UI 6 Actor Profile UI](https://github.com/harshkumarkhatri/Flutter-UI-6-Actor-Profiles-App)
+* [Flutter UI 7 Buying Frames UI](https://github.com/harshkumarkhatri/Flutter-UI-7-Buying-Frames)
+* [Flutter UI 8 New Mobile App UI](https://github.com/x-boys13/Flutter-UI-8-Truth-News-Mobile-App)
+* [Flutter UI 9 Educational UI](https://github.com/harshkumarkhatri/Flutter-UI-9-Education-app)
+* [Flutter UI 10 E-Book App UI](https://github.com/harshkumarkhatri/Flutter-UI-10-E-Book-App)
+
 **About the UI**:-<br>
 When you open the app you see three buttons at the bottom of the screen with a nice gradient background. The three buttons say Short tour, Login and Register.<br> Login and register buttons take you to the login and register screen and the short tour button takes you arround a screen slider which has a skip button and a next button. The next button changes to finish when the user scrolls to the last screen. When we click on skip we are taken directly to the last screen. <br>Once you login successfully you will then be having a bottom navigation bar with a bit of customizations. The default screen which will be selected with the bottom navigation bar will be the one through which we can have a look at the various different books which are available to us in the app. We have categories to choose from, featured books and many more. This covers horizontal as well as vertical lists which have items aligned in their specific widgets. <br>The other three icon apart from home in the bottom navigation bar are liked, profile and settings which take you to their respective pages. The like page has the articles which you have saved, profile page shows you your profile and the options which are there for managing your profile. The setting page is a container with some text in the center.
 ___
